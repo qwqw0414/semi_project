@@ -4,41 +4,33 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<title>Insert title here</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="<%=request.getContextPath()%>/js/jquery-3.4.1.js"></script>
+<title>근호농장</title>
 </head>
 <body>
-
-	<nav class="navbar navbar-inverse">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<a class="navbar-brand" href="#">로스팜</a>
-			</div>
-			<ul class="nav navbar-nav">
-				<li class="active"><a href="#">Home</a></li>
-				<li><a href="#">Page 1</a></li>
-				<li><a href="#">Page 2</a></li>
-			</ul>
-			<form class="navbar-form navbar-left" action="/action_page.php">
-				<div class="input-group">
-					<input type="text" class="form-control" placeholder="Search">
-					<div class="input-group-btn">
-						<button class="btn btn-default" type="submit">
-							<i class="glyphicon glyphicon-search"></i>
-						</button>
-					</div>
-				</div>
-			</form>
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href="<%=request.getContextPath()%>/member/memberEnroll"><span class="glyphicon glyphicon-user"></span>
-						회원가입</a></li>
-				<li><a href="#"><span class="glyphicon glyphicon-log-in"></span>
-						로그인</a></li>
-			</ul>
-		</div>
+<header>
+	<nav class="navbar navbar-expand-sm bg-light justify-content-center">
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a class="nav-link" href="<%=request.getContextPath()%>/">홈</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="<%=request.getContextPath()%>/member/memberEnroll">회원가입</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">아이디 찾기</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">비밀번호 찾기</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">로그인</a>
+			</li>
+		</ul>
 	</nav>
+</header>
+<article>
