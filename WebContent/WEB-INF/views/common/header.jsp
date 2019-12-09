@@ -35,7 +35,7 @@
 				</div>
 			</form>
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#"><span class="glyphicon glyphicon-user"></span>
+				<li><a href="<%=request.getContextPath()%>/member/memberEnroll"><span class="glyphicon glyphicon-user"></span>
 						회원가입</a></li>
 				<li><a href="#"><span class="glyphicon glyphicon-log-in"></span>
 						로그인</a></li>
